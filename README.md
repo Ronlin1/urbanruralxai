@@ -1,32 +1,97 @@
 # urbanruralxai
 
-Urban-Rural Energy Disparities: An XAI Approach to Biomass Allocation
-https://img.shields.io/badge/python-3.8+-blue.svg
-https://img.shields.io/badge/License-MIT-yellow.svg
-https://img.shields.io/badge/MLflow-1.0+-orange.svg
-https://img.shields.io/badge/Explainable-AI-green.svg
-
-A comprehensive machine learning framework for predicting district-level biomass energy potential in Uganda using Explainable AI (XAI) and MLOps practices. This research addresses urban-rural energy disparities through data-driven policy recommendations.
+🌍 Urban–Rural Energy Disparities: An XAI Approach to Biomass Allocation
+A comprehensive machine learning framework for predicting district-level biomass energy potential in Uganda using Explainable AI (XAI), advanced modeling techniques, and MLOps best practices.
+This research addresses urban–rural energy gaps by generating transparent insights and data-driven policy recommendations.
 
 📊 Overview
-This project presents an end-to-end framework that leverages machine learning and Explainable AI to predict and understand the drivers of biomass energy potential in Uganda. The framework enables policymakers to simulate the impact of various intervention strategies and make evidence-based decisions for equitable resource allocation.
+This project introduces an end-to-end workflow combining:
 
-Key Features
-8 ML Models Evaluated: LightGBM, XGBoost, Random Forest, CatBoost, Gradient Boosting, Extra Trees, TabTransformer, GAT
+Machine Learning
 
-Comprehensive XAI Analysis: SHAP, LIME, GradientSHAP for model interpretability
+Explainable AI
 
-Robust MLOps Pipeline: MLflow for experiment tracking and reproducibility
+Geospatial features
 
-Policy Simulation Tool: Quantify impact of afforestation and conservation policies
+Model interpretability
 
-Full CI/CD Deployment: Dockerized Flask API deployable on Render/Heroku
+Policy scenario simulation
+
+MLOps experiment tracking
+
+The system predicts biomass energy potential across Uganda’s districts and identifies the factors driving persistent urban–rural disparities. It also enables policymakers to simulate conservation and afforestation interventions for equitable biomass allocation planning.
+
+🚀 Key Features
+🔹 Eight Machine Learning Models Evaluated
+LightGBM
+
+XGBoost
+
+Random Forest
+
+CatBoost
+
+Gradient Boosting
+
+Extra Trees
+
+TabTransformer
+
+Graph Attention Network (GAT)
+
+🔹 Comprehensive Explainable AI (XAI) Suite
+SHAP – global & local feature importance
+
+LIME – instance-level explanations
+
+GradientSHAP / Integrated Gradients – deep learning interpretability
+
+Attention Visualization (for GAT)
+
+🔹 Robust MLOps Pipeline
+Experiment tracking using MLflow
+
+Versioned artifacts (models, metrics, parameters)
+
+Reproducible pipelines with conda/Docker environments
+
+🔹 Policy Simulation Engine
+Simulates the effect of:
+
+Afforestation interventions
+
+Reduced hardwood loss
+
+Combined conservation strategies
+
+Produces quantitative impacts in GJ at both national and district levels.
+
+🔹 Full Deployment Support
+Dockerized model
+
+Flask API
+
+CI/CD-ready for Render / Heroku containers
 
 🎯 Key Findings
-Best Performing Model: LightGBM (R² = 0.535 in log space)
+⭐ Best Performing Model
+LightGBM
 
-Most Important Feature: Hardwood biomass (identified via SHAP analysis)
+R² = 0.535 (in log-transformed space)
 
-Policy Impact: Combined afforestation + conservation policy could increase national energy potential by 11.5 million GJ annually
+Most stable and well-generalized across districts
 
-Regional Insights: Central and Western Uganda show highest energy potential
+⭐ Most Influential Feature
+Hardwood biomass stock
+
+Dominant driver across SHAP and LIME analyses
+
+⭐ Policy Simulation Insights
+A combined afforestation + conservation strategy could increase national biomass energy potential by
+≈ 11.5 million GJ annually
+
+⭐ Regional Patterns
+Central and Western Uganda display the highest predicted biomass potential
+
+Districts with rapidly declining hardwood stock show high vulnerability
+
